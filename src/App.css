@@ -1,0 +1,22 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+:root {
+   --color-1: #F4F5F0;
+   --color-2: #FEFEFE;
+   --color-3: #E5E2D1;
+   --color-4: #514630;
+
+   --gap: 1.25rem;
+   --gap-s: 0.625rem
+}
+
+.menu-box {
+   display: grid;
+   grid-template-columns: 200px 300px 200px;
+   background-color: red;
+}
