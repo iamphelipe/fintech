@@ -13,21 +13,21 @@ function App() {
     <>
       <ContextoProvider>
         <div className="container">
+          <Sidebar />
           <div className="menu-box">
-            <Sidebar />
             <Header />
             <h1>Resumo</h1>
+            <main>
+              <Routes>
+                <Route path="/" element={<Resumo />} />
+                <Route path="vendas" element={<Vendas />} />
+              </Routes>
+            </main>
           </div>
-          <main>
-            <Routes>
-              <Route path="/" element={<Resumo />} />
-              <Route path="vendas" element={<Vendas />} />
-            </Routes>
-          </main>
-          <footer>
-            <Footer />
-          </footer>
         </div>
+        <footer>
+          <Footer />
+        </footer>
       </ContextoProvider>
     </>
   );

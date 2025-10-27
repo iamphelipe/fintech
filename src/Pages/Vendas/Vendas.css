@@ -1,0 +1,7 @@
+.venda-box {
+   background-color: orange;
+   display: flex;
+   padding: var(--gap);
+   margin: var(--gap);
+   justify-content: space-around;
+}

@@ -19,8 +19,14 @@ body {
    background-color: var(--color-1);
 }
 
+.container {
+   background-color: green;
+   display: grid;
+   grid-template-columns: 300px 1fr;
+}
+
 .menu-box {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
    background-color: red;
 }
