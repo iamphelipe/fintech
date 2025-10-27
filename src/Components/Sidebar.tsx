@@ -1,4 +1,3 @@
-import React from 'react'
 import configuracoes from "../assest/icons/configuracoes.svg"
 import contato from "../assest/icons/contato.svg"
 import resumo from "../assest/icons/resumo.svg"

@@ -1,6 +1,7 @@
 import React from 'react'
 import Input from './Input'
 import { useData } from '../Context/useContext'
+import Meses from './Meses'
 
 const style: React.CSSProperties = {
   display: 'flex',
@@ -25,6 +26,7 @@ const Header = () => {
             onChange={(e) => setFinal(e.target.value)}
           />
         </div>
+        <Meses />
       </form>
   );
 }
