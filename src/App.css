@@ -15,8 +15,12 @@
    --gap-s: 0.625rem
 }
 
+body {
+   background-color: var(--color-1);
+}
+
 .menu-box {
    display: grid;
-   grid-template-columns: 200px 300px 200px;
+   grid-template-columns: 1fr 1fr 1fr;
    background-color: red;
 }

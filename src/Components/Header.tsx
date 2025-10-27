@@ -1,5 +1,6 @@
 import React from 'react'
 import Input from './Input'
+import { useData } from '../Context/useContext'
 
 const style: React.CSSProperties = {
   display: 'flex',
@@ -8,9 +9,8 @@ const style: React.CSSProperties = {
 
 const Header = () => {
 
-     const [inicio, setInicio] = React.useState("")
-     const [final, setFinal] = React.useState("")
-
+    const {inicio,final,setInicio,setFinal} = useData()
+    
   return (
       <form>
         <div style={style}>

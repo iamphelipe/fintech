@@ -1,8 +1,8 @@
 import React from "react";
 
-function useFetch(API: RequestInfo | URL) {
+function useFetch<T>(API: RequestInfo | URL) {
 
-   const [data, setData] = React.useState(null)
+   const [data, setData] = React.useState<T | null>(null)
    const [loading, setLoading] = React.useState(false)
    const [error, setError] = React.useState<Error | null>(null)
 
