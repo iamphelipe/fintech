@@ -13,7 +13,7 @@ const Header = () => {
     const {inicio,final,setInicio,setFinal} = useData()
     
   return (
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         <div style={style}>
           <Input
             label="Início"
