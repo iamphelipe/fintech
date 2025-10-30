@@ -1,9 +1,10 @@
 import React from 'react'
+import "./Input.css"
 
 const style: React.CSSProperties = {
-   display: "flex",
-   flexDirection: "column",
-   gap: "var(--gap-s)"
+   display: "grid",
+   gridTemplateColumns: "250px",
+   gap: "var(--gap-s)",
 }
 
 type InputProps = React.ComponentProps<"input"> & {
@@ -15,7 +16,7 @@ const Input = ({label, ...rest} : InputProps) => {
   return (
    <div style={style}>
       <label htmlFor={label}>{label}</label>
-      <input type="date" name={label} {...rest} />
+      <input className='input-control' type="date" name={label} {...rest} />
    </div>
   );
 }

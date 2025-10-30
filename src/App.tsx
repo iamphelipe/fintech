@@ -16,7 +16,6 @@ function App() {
           <Sidebar />
           <div className="menu-box">
             <Header />
-            <h1>Resumo</h1>
             <main>
               <Routes>
                 <Route path="/" element={<Resumo />} />

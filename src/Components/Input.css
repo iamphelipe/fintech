@@ -1,0 +1,16 @@
+.input-control {
+   border: none;
+   font-family: monospace;
+   margin-right: 50px;
+}
+
+label {
+   font-weight: 600;
+}
+
+label, .input-control {
+   background-color: var(--color-3);
+   padding: var(--gap-s) var(--gap);
+   border-radius: var(--gap);
+   font-size: 1rem;
+}

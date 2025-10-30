@@ -2,10 +2,16 @@ import React from 'react'
 import Input from './Input'
 import { useData } from '../Context/useContext'
 import Meses from './Meses'
+import TitleRoute from './TitleRoute'
 
 const style: React.CSSProperties = {
   display: 'flex',
-  gap: "var(--gap)"
+  gap: "var(--gap)",
+  backgroundColor: "var(--color-2)",
+  color: "var(--color-4)",
+  padding: "var(--gap)",
+  margin: "var(--gap)",
+  borderRadius: "var(--gap)"
 }
 
 const Header = () => {
@@ -26,6 +32,7 @@ const Header = () => {
             onChange={(e) => setFinal(e.target.value)}
           />
         </div>
+        <TitleRoute />
         <Meses />
       </form>
   );

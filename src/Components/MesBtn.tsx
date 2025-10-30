@@ -3,12 +3,16 @@ import { useData } from "../Context/useContext";
 
 const style: React.CSSProperties = {
    textTransform: "capitalize",
-   padding: "var(--gap) var(--gap-s)",
+   padding: "var(--gap)",
    backgroundColor: "var(--color-3)",
    border: "none",
    borderRadius: "var(--gap)",
    color: "var(--color-4)",
-   fontWeight: "600"
+   fontWeight: "600",
+   display: "flex",
+   justifyContent: "center",
+   flex: "1",
+   cursor: "pointer"
 }
 
 function getMonth(n: number) {
