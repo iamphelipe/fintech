@@ -5,11 +5,12 @@ import sair from "../assest/icons/sair.svg"
 import vendas from "../assest/icons/vendas.svg"
 import webhooks from "../assest/icons/webhooks.svg"
 import { NavLink } from 'react-router-dom'
+import "./Sidebar.css"
 
 const Sidebar = () => {
   return (
-    <div>
-      <nav>
+    <div className="nav-box">
+      <nav className="nav">
         <div>
           <h1>Fintech</h1>
         </div>

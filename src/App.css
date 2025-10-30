@@ -20,7 +20,6 @@ body {
 }
 
 .container {
-   background-color: green;
    display: grid;
    grid-template-columns: 300px 1fr;
 }
@@ -39,4 +38,13 @@ form {
 button {
    font-weight: 800;
    font-size: 1rem;
+}
+
+ul li  {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: var(--color-4);
 }

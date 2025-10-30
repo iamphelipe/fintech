@@ -1,0 +1,11 @@
+.nav-box {
+   height: 100vh;
+   background-color: var(--color-3);
+   padding: var(--gap);
+   margin: var(--gap);
+   border-radius: var(--gap);
+}
+
+.nav {
+   background-color: var(--color-1);
+}

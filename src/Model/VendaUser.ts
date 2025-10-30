@@ -2,8 +2,8 @@ export interface VendaUser {
    id: string;
    nome: string;
    preco: number;
-   status: string;
-   pagamento: string;
+   status: "processando" | "falha" | "pago";
+   pagamento: "boleto" | "cartao" | "pix";
    parcelas: number | null;
    data: string
 }

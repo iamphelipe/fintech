@@ -9,7 +9,7 @@ label {
 }
 
 label, .input-control {
-   background-color: var(--color-3);
+   background-color: var(--color-1);
    padding: var(--gap-s) var(--gap);
    border-radius: var(--gap);
    font-size: 1rem;

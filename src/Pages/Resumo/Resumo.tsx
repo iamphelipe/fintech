@@ -1,9 +1,12 @@
-import React from 'react'
+
+import StatusVenda from '../../Components/StatusVenda'
 
 const Resumo = () => {
 
   return (
-    <div>Resumo</div>
+    <>
+    <StatusVenda />
+    </>
   )
 }
 
