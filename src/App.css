@@ -22,11 +22,10 @@ body {
 .container {
    display: grid;
    grid-template-columns: 300px 1fr;
+   height: 100vh;
 }
 
 .menu-box {
-   display: grid;
-   grid-template-columns: 1fr;
    background-color: var(--color-1);
 }
 
