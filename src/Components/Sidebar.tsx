@@ -14,7 +14,7 @@ const Sidebar = () => {
         <div>
           <h1>Fintech</h1>
         </div>
-        <div>
+        <div className="icons-box">
           <ul>
             <li>
               <img src={resumo} alt="Icone Resumo" />

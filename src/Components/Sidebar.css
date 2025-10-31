@@ -5,6 +5,24 @@
    border-radius: var(--gap);
 }
 
-.nav {
+.icons-box {
+   margin-top: var(--gap);
+}
+
+.icons-box li {
+   display: flex;
+   align-items: center;
+   gap: var(--gap-s);
+   margin-bottom: var(--gap);
+   font-size: 1.2rem;
+}
+
+.icons-box img {
    background-color: var(--color-1);
+   padding: var(--gap-s);
+   border-radius: 50%;
+}
+
+.icons-box li:hover img {
+   background-color: transparent;
 }

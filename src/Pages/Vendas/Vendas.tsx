@@ -12,7 +12,7 @@ const Vendas = () => {
         <div className="venda-box">
           <p style={{fontFamily: "monospace"}}>{d.id}</p>
           <p>{d.nome}</p>
-          <p>
+          <p className='dataPrice'>
             {d.preco.toLocaleString('pt-BR', {
               style: 'currency',
               currency: 'BRL',

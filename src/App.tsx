@@ -3,7 +3,6 @@ import Header from "./Components/Header"
 import Sidebar from "./Components/Sidebar"
 import Resumo from "./Pages/Resumo/Resumo"
 import Vendas from "./Pages/Vendas/Vendas"
-import Footer from "./Components/Footer"
 import "./App.css"
 import { ContextoProvider } from "./Context/useContext"
 
@@ -24,9 +23,6 @@ function App() {
             </main>
           </div>
         </div>
-        <footer>
-          <Footer />
-        </footer>
       </ContextoProvider>
     </>
   );

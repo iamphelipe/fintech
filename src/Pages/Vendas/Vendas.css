@@ -1,7 +1,12 @@
 .venda-box {
-   background-color: orange;
+   background-color: var(--color-2);
    display: flex;
    padding: var(--gap);
    margin: var(--gap);
-   justify-content: space-around;
+   border-radius: var(--gap);
+   gap: var(--gap);
+}
+
+.venda-box .dataPrice {
+   margin-left: auto;
 }
