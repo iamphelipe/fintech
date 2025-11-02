@@ -1,0 +1,6 @@
+.venda-id-box p {
+   background-color: var(--color-2);
+   padding: var(--gap);
+   margin: var(--gap);
+   border-radius: var(--gap);
+}

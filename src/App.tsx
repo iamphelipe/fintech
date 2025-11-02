@@ -5,6 +5,7 @@ import Resumo from "./Pages/Resumo/Resumo"
 import Vendas from "./Pages/Vendas/Vendas"
 import "./App.css"
 import { ContextoProvider } from "./Context/useContext"
+import Venda from "./Pages/Venda/Venda"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Resumo />} />
                 <Route path="vendas" element={<Vendas />} />
+                <Route path="venda/:id" element={<Venda />}/>
               </Routes>
             </main>
           </div>
