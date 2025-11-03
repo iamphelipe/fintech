@@ -2,14 +2,17 @@ import { useParams } from 'react-router-dom'
 import useFetch from '../../Hook/useFetch';
 import type { VendaUser } from '../../Model/VendaUser';
 import './Venda.css'
+import Loading from '../../Components/Loading';
 
 const Venda = () => {
 
   const {id} = useParams()
   console.log(id);
   
-  const {data} = useFetch<VendaUser>(`https://data.origamid.dev/vendas/${id}`)
+  const {data, loading} = useFetch<VendaUser>(`https://data.origamid.dev/vendas/${id}`)
   if(!data) return null
+
+  if(loading) return <Loading />
   
   return (
     <div className='venda-id-box'>

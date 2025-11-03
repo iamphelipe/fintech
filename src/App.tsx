@@ -7,8 +7,9 @@ import "./App.css"
 import { ContextoProvider } from "./Context/useContext"
 import Venda from "./Pages/Venda/Venda"
 
-function App() {
 
+function App() {
+  
   return (
     <>
       <ContextoProvider>

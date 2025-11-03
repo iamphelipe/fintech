@@ -1,0 +1,51 @@
+  :root{
+    --loader-size: 48px;
+    --loader-thickness: 6px;  
+    --loader-color: #3498db;  
+    --loader-bg: rgba(0,0,0,0.08); 
+    --loader-speed: 1s;     
+  }
+
+  .loader-wrap{
+    display: inline-flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    user-select: none;
+    padding: var(--gap);
+  }
+
+  .spinner{
+    width: var(--loader-size);
+    height: var(--loader-size);
+    border-radius: 50%;
+    border: var(--loader-thickness) solid var(--loader-bg);
+    border-top-color: var(--loader-color);
+    animation: spin var(--loader-speed) linear infinite;
+    box-sizing: border-box;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .loader-text{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-size: 0.9rem;
+    color: #333;
+  }
+
+  .spinner.small { --loader-size: 28px; --loader-thickness: 4px; }
+  .spinner.large { --loader-size: 72px; --loader-thickness: 8px; --loader-speed: 0.9s; }
+
+  .spinner.red { --loader-color: #e74c3c; }
+
+  .fullscreen-center{
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: rgba(255,255,255,0.6);
+    z-index: 9999;
+  }

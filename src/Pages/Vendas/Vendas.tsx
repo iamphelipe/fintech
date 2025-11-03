@@ -1,12 +1,15 @@
 import { NavLink } from 'react-router-dom'
 import { useData } from '../../Context/useContext'
 import "./Vendas.css"
+import Loading from '../../Components/Loading'
 
 const Vendas = () => {
 
-  const {data} = useData()
+  const {data, loading} = useData()
+  
   if(!data) return null
 
+  if(loading) return <Loading />
   return (
     <div>
       {data.map((d) => (
