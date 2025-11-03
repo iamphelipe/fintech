@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 
 const style : React.CSSProperties = {
    padding: "var(--gap)", 
@@ -9,8 +10,11 @@ const style : React.CSSProperties = {
 }
 
 const TitleRoute = () => {
+
+  const {pathname} = useLocation()
+
   return (
-    <h1 style={style}>Resumo</h1>
+    <h1 style={style}>{pathname === "/" ? "Resumo" : "Vendas"}</h1>
   )
 }
 

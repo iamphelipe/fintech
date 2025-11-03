@@ -22,10 +22,27 @@ export const useData = () => {
   return context;
 };
 
+function getDay(n: number) {
+  const date = new Date();
+
+  if (n > 0) {
+    const dd = String(date.getDate()).padStart(2, '0');
+    const mm = date.getMonth() + 1;
+    const yyyy = date.getFullYear();
+    return `${yyyy}-${mm}-${dd}`;
+  } else {
+    date.setDate(date.getDate() - 30);
+    const dd = String(date.getDate()).padStart(2, '0');
+    const mm = date.getMonth() + 1;
+    const yyyy = date.getFullYear();
+    return `${yyyy}-${mm}-${dd}`;
+  }
+}
+
 export const ContextoProvider = ({children} : React.PropsWithChildren) => {
   
-   const [inicio, setInicio] = React.useState("")
-   const [final, setFinal] = React.useState("")
+   const [inicio, setInicio] = React.useState(getDay(0))
+   const [final, setFinal] = React.useState(getDay(1))
 
    const {data, loading, error} = useFetch<VendaUser[]>(`https://data.origamid.dev/vendas/?inicio=${inicio}&final=${final}`)
 
